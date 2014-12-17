@@ -5,7 +5,7 @@
 <link href="css/reset.css" type="text/css" rel="stylesheet"/>
 <link href="css/layout.css" type="text/css" rel="stylesheet"/>
 <link href="css/menu.css" type="text/css" rel="stylesheet"/>
-<title>layout</title>
+<title>page2</title>
 </head>
 
 <body>
@@ -14,18 +14,26 @@
     		<div class="header-container">
       			<div class="header-top clearfix">
                 	<div class="logo"><a><img src="images/logo.png"/></a></div>
-                    <div class="menu-wrapper">
+                     <div class="menu-wrapper">
                             <ul>
                                 <li class="active"><a>Home</a></li>
                                 <li><a>Our products</a></li>
-                                <li><a>Our clients</a></li>
+                                <li><a>Our clients</a>
+                                	<ul>
+                                        <li><a href="#">Decore</a></li>
+                                        <li><a href="#">Omega</a></li>
+                                        <li><a href="#">Kalanga</a></li>
+                                    </ul>
+                                </li>
                                 <li><a>Contact</a></li>
                              </ul>
-                       		<input value="search" type="text" />
+      		               	<div class="search-block">
+                                <form>
+                                    <input type="text" value="Search" />
+                                    <button type="submit"></button>
+                                </form>
+               				</div>
                   	</div>
-                    <div>
-                        <span><img src="images/search.png"/></span>
-                	</div>
    	  			</div>
                 <div class="header-bottom clearfix">
                 	<img src="images/image1.jpg"/>
@@ -41,39 +49,45 @@
                        </div>
                     <div class="right-block clearfix">
                     	<img src="images/product-goggles-sport.png"/>
-                    	<div class="zoom-image"><a href="#"><img src="images/plus-logo.png"/></a></div>
+                    	<div class="zoom-image" ><a href="images/glass-1.png"><img src="images/plus-logo.png" id="light-box-icon"/></a></div>
                         <span class="price">58.00 USD</span>
-                        <div class="buy-button clearfix"><span><a>kjkjhksdfdsfdsfsdfh</a></span><!--<span class="right-button-buy">jhkh</span>--></div>
+                        <div class="buy-button">
+                        	<a href="">
+                                <span class="buy-left"></span>
+                                <span class="buy-middle">BUY</span>
+                                <span class="buy-right"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
              
             </div>
             <div class="footer">
-            	<div class="footer-top">
-                	<div class="footer-top-inside">
+            	<div class="footer-top clearfix">
+                	<div class="footer-top-inside clearfix">
                     	<p>If you want the best clarity and protection on the planet, nothing comes close to Oakley's High Definition OpticsR (HDOR). Its patented technologies surpass all tests of the American National Standards Institute.</p>
                         <div class="footer-container-list">
                         	<ul>
                             	<li>
-                                	<span><img src="images/footer-logo.png"></span>
+                                	<span><a><img src="images/footer-logo.png"></a></span>
                                 	<h1>HD POLARIZED</h1>
 <p>Oakley uses a liquid infusion Process that creates bonding at the molecular level, allowing the filter to achieve the highest possible level of performance.</p>
                                 </li>	
-                                <li>
-                                	<span><img src="images/footer-logo.png"></span>
-                                	<h1>HD POLARIZED</h1>
-<p>Oakley uses a liquid infusion Process that creates bonding at the molecular level, allowing the filter to achieve the highest possible level of performance.</p>
-                                </li>	
-                                <li>
-                                	<span><img src="images/footer-logo.png"></span>
-                                	<h1>HD POLARIZED</h1>
-<p>Oakley uses a liquid infusion Process that creates bonding at the molecular level, allowing the filter to achieve the highest possible level of performance.</p>
-                                </li>	
-                                 <li>
-                                	<span><img src="images/footer-logo.png"></span>
-                                	<h1>HD POLARIZED</h1>
-<p>Oakley uses a liquid infusion Process that creates bonding at the molecular level, allowing the filter to achieve the highest possible level of performance.</p>
-                                </li>
+                                 <li> 
+                               		<span><a><img src="images/ftlogo2.png" alt="logo2"/></a></span>
+             					 	<h1>HYDROPHOBIC</h1>
+					             	<p>A permanent lens coating that prevents rain and sweat from building up on the lens. It also repels skin oils, so the lens is smudge resistant and easy to keep clean. </p>
+            					</li>
+            					<li>
+            						<span><a><img src="images/ftlogo3.png" alt="logo3"/></a></span>
+              						<h1>PRESCRIPTION</h1>
+               						<p>From the office to any playing surface, Oakley prescription eyewear can put things in focus for everywhere in between. Sunglasses, too.</p>
+            					</li>
+            					<li> 
+                                	<span><a><img src="images/ftLogo4.png" alt="logo4"/></a></span>
+              						<h1>PHOTOCHROMIC</h1>
+               						<p>Light conditions change constantly and if your eyes can't keep up, your performance will suffer. Maintain peak performance while being shielded from 100% of all harmful UV rays</p>
+            					</li>
                             </ul>
                         </div>
                     </div>
@@ -87,14 +101,15 @@
                     </ul>
                 </div>
                 <div class="footer-end">
-                	<div class="language">
-                        <ul>
-                        	<li><img src="images/us-flag.png"/></li>
-                          	<li><img src="images/us-flag.png"/></li>
-                        </ul>
-                        <span><a href="#">Change Country<img src="images/arrow.png"/></a></span> 
-                  	</div>
-                    <div class="information-footer">
+                	<form>
+                	<select id="change-language">
+                    	<option value='USA' pics='images/us_flag.png' selected="selected">Usa</option>
+                        <option value='Nepal' pics='images/np_flag.png' >Nepal</option>
+                        <option value='India' pics='images/in_flag.png'>India</option>
+                    </select>
+                    </form>
+                    <div id="add-language" class="parent-good"></div>
+                    <div class="footer-options">
                         <ul>
                         	<li><a href="#">Gift Cards</a></li>
                           	<li><a href="#">Site Map</a></li>
@@ -108,12 +123,13 @@
                           	<li><a href="#">Feedback</a></li>
                         </ul>
                       </div>
-                      <span>Copyright 2014 Oakley, Inc, All Rights Reserved</span> </div>
+                      <span class="copyright-line" >Copyright 2014 Oakley, Inc, All Rights Reserved</span> </div>
                   </div>             
                 </div>
             </div>
 		</div>
 	</div>
-        
+    <script type="text/javascript" src="js/lightBox.js"></script>
+    <script src="js/changeLanguage.js" ></script>    
 </body>
 </html>
